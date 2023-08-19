@@ -8,7 +8,8 @@ import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-import { Modal } from "@/components/ui/modal";
+// import { Modal } from "@/components/ui/modal";
+import { Modal } from "../ui/modal";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useStoreModal } from "@/hooks/use-store-modal";
