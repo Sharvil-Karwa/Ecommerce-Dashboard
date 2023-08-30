@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/form"
 import { Separator } from "@/components/ui/separator"
 import { Heading } from "@/components/ui/heading"
-import { AlertModal } from "@/components/modal/alert-modal"
+import { AlertModal } from "@/components/modals/alert-modal"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import ImageUpload from "@/components/ui/image-upload"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -128,7 +128,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
       loading={loading}
     />
      <div className="flex items-center justify-between">
-        <Heading title={title} desc={description} />
+        <Heading title={title} description={description} />
         {initialData && (
           <Button
             disabled={loading}

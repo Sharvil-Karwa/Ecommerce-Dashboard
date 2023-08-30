@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/form"
 import { Separator } from "@/components/ui/separator"
 import { Heading } from "@/components/ui/heading"
-import { AlertModal } from "@/components/modal/alert-modal"
+import { AlertModal } from "@/components/modals/alert-modal"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 const formSchema = z.object({
@@ -72,7 +72,7 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
       router.push(`/${params.storeId}/categories`);
       toast.success(toastMessage);
     } catch (error: any) {
-      toast.error("Something went wrong.");
+      toast.error('Something went wrong.');
     } finally {
       setLoading(false);
     }
@@ -102,7 +102,7 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
       loading={loading}
     />
      <div className="flex items-center justify-between">
-        <Heading title={title} desc={description} />
+        <Heading title={title} description={description} />
         {initialData && (
           <Button
             disabled={loading}

@@ -14,7 +14,7 @@ import {
   DropdownMenuLabel, 
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
-import { AlertModal } from "@/components/modal/alert-modal";
+import { AlertModal } from "@/components/modals/alert-modal";
 
 import { SizeColumn } from "./columns";
 

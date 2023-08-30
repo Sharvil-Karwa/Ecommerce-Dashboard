@@ -8,8 +8,7 @@ import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-// import { Modal } from "@/components/ui/modal";
-import { Modal } from "../ui/modal";
+import { Modal } from "@/components/ui/modal";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useStoreModal } from "@/hooks/use-store-modal";
@@ -36,7 +35,7 @@ export const StoreModal = () => {
     try {
       setLoading(true);
       const response = await axios.post('/api/stores', values);
-      window.location.assign('/'+response.data.id);
+      window.location.assign(`/${response.data.id}`);
     } catch (error) {
       toast.error('Something went wrong');
     } finally {

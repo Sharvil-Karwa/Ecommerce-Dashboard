@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/form"
 import { Separator } from "@/components/ui/separator"
 import { Heading } from "@/components/ui/heading"
-import { AlertModal } from "@/components/modal/alert-modal"
+import { AlertModal } from "@/components/modals/alert-modal"
 
 const formSchema = z.object({
   name: z.string().min(2),
@@ -100,7 +100,7 @@ export const ColorForm: React.FC<ColorFormProps> = ({
       loading={loading}
     />
      <div className="flex items-center justify-between">
-        <Heading title={title} desc={description} />
+        <Heading title={title} description={description} />
         {initialData && (
           <Button
             disabled={loading}
